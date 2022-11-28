@@ -1,4 +1,4 @@
-package com.dailycodebuffer.Springboot.tutorial;
+package com.dailycodebuffer.tutorial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

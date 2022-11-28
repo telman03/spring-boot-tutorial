@@ -1,13 +1,13 @@
-package com.dailycodebuffer.Springboot.tutorial;
+package com.dailycodebuffer.tutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class SprintBootTutorialApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(SprintBootTutorialApplication.class, args);
 	}
 
 }
