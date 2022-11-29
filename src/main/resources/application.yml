@@ -1,0 +1,23 @@
+server:
+  port: '8082'
+spring:
+  datasource:
+    username: postgres
+    hikari:
+      maximum-pool-size: '5'
+      connection-timeout: '20000'
+    url: jdbc:postgresql://localhost:5432/dcbapp
+    password: eden258
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+welcome:
+  message: Welcome to Daily Code Buffer !!
+
