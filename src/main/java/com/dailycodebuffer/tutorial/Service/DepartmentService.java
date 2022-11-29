@@ -1,6 +1,7 @@
 package com.dailycodebuffer.tutorial.Service;
 
 import com.dailycodebuffer.tutorial.Entity.Department;
+import com.dailycodebuffer.tutorial.Error.DepartmentNotFoundException;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface DepartmentService {
 
     public List<Department> fetchDepartmentList();
 
-    public Department fetchDepartmentList(Long departmentId);
+    public Department fetchDepartmentList(Long departmentId) throws DepartmentNotFoundException;
 
     public void deleteDepartmentById(Long departmentId);
 

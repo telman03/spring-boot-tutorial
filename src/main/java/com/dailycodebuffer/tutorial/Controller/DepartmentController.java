@@ -1,6 +1,7 @@
 package com.dailycodebuffer.tutorial.Controller;
 
 import com.dailycodebuffer.tutorial.Entity.Department;
+import com.dailycodebuffer.tutorial.Error.DepartmentNotFoundException;
 import com.dailycodebuffer.tutorial.Service.DepartmentService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -32,7 +33,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/departments/{id}")
-    public Department fetchDepartmentById(@PathVariable("id") Long departmentId) {
+    public Department fetchDepartmentById(@PathVariable("id") Long departmentId) throws DepartmentNotFoundException {
         return departmentService.fetchDepartmentList(departmentId);
     }
 
